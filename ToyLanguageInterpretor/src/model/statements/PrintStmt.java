@@ -24,6 +24,6 @@ public final class PrintStmt implements IStmt {
 
     @Override
     public String toString() {
-        return "Print(" + exp + ")";
+        return "print(" + exp + ")";
     }
 }

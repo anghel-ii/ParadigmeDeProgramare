@@ -21,8 +21,10 @@ public class Controller {
 
     public void allStep() {
         PrgState prg = repo.getCrtPrg();
+        repo.logPrgStateExec();
         while (!prg.getExeStack().isEmpty()) {
             oneStep(prg);
+            repo.logPrgStateExec();
             System.out.println(prg);
         }
         System.out.println("Final state:\n" + prg);

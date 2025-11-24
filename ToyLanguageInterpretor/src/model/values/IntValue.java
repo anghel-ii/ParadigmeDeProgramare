@@ -7,8 +7,8 @@ public final class IntValue implements Value{
 
     private final int val;
 
-    public IntValue(int v) {
-        this.val = v;
+    public IntValue(int val) {
+        this.val = val;
     }
 
     public int getVal() {

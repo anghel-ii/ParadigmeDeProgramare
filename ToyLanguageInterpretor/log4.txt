@@ -1,0 +1,937 @@
+ExeStack:
+(string varf ; (varf = model.values.StringValue@4eec7777 ; (model.statements.OpenRFileStmt@3b07d329 ; (int varc ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; (model.statements.ReadFileStmt@404b9385 ; (Print(varc) ; model.statements.CloseRFileStmt@6d311334))))))))
+SymTable:
+Out:
+FileTable:
+------------------------------
+ExeStack:
+string varf
+(varf = model.values.StringValue@4eec7777 ; (model.statements.OpenRFileStmt@3b07d329 ; (int varc ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; (model.statements.ReadFileStmt@404b9385 ; (Print(varc) ; model.statements.CloseRFileStmt@6d311334)))))))
+SymTable:
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(varf = model.values.StringValue@4eec7777 ; (model.statements.OpenRFileStmt@3b07d329 ; (int varc ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; (model.statements.ReadFileStmt@404b9385 ; (Print(varc) ; model.statements.CloseRFileStmt@6d311334)))))))
+SymTable:
+varf --> model.values.StringValue@448139f0
+Out:
+FileTable:
+------------------------------
+ExeStack:
+varf = model.values.StringValue@4eec7777
+(model.statements.OpenRFileStmt@3b07d329 ; (int varc ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; (model.statements.ReadFileStmt@404b9385 ; (Print(varc) ; model.statements.CloseRFileStmt@6d311334))))))
+SymTable:
+varf --> model.values.StringValue@448139f0
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(model.statements.OpenRFileStmt@3b07d329 ; (int varc ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; (model.statements.ReadFileStmt@404b9385 ; (Print(varc) ; model.statements.CloseRFileStmt@6d311334))))))
+SymTable:
+varf --> model.values.StringValue@4eec7777
+Out:
+FileTable:
+------------------------------
+ExeStack:
+model.statements.OpenRFileStmt@3b07d329
+(int varc ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; (model.statements.ReadFileStmt@404b9385 ; (Print(varc) ; model.statements.CloseRFileStmt@6d311334)))))
+SymTable:
+varf --> model.values.StringValue@4eec7777
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(string varf ; (varf = model.values.StringValue@7699a589 ; (model.statements.OpenRFileStmt@58372a00 ; (int varc ; (model.statements.ReadFileStmt@4dd8dc3 ; (Print(varc) ; (model.statements.ReadFileStmt@6d03e736 ; (Print(varc) ; model.statements.CloseRFileStmt@568db2f2))))))))
+SymTable:
+Out:
+FileTable:
+------------------------------
+ExeStack:
+string varf
+(varf = model.values.StringValue@7699a589 ; (model.statements.OpenRFileStmt@58372a00 ; (int varc ; (model.statements.ReadFileStmt@4dd8dc3 ; (Print(varc) ; (model.statements.ReadFileStmt@6d03e736 ; (Print(varc) ; model.statements.CloseRFileStmt@568db2f2)))))))
+SymTable:
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(varf = model.values.StringValue@7699a589 ; (model.statements.OpenRFileStmt@58372a00 ; (int varc ; (model.statements.ReadFileStmt@4dd8dc3 ; (Print(varc) ; (model.statements.ReadFileStmt@6d03e736 ; (Print(varc) ; model.statements.CloseRFileStmt@568db2f2)))))))
+SymTable:
+varf --> model.values.StringValue@378bf509
+Out:
+FileTable:
+------------------------------
+ExeStack:
+varf = model.values.StringValue@7699a589
+(model.statements.OpenRFileStmt@58372a00 ; (int varc ; (model.statements.ReadFileStmt@4dd8dc3 ; (Print(varc) ; (model.statements.ReadFileStmt@6d03e736 ; (Print(varc) ; model.statements.CloseRFileStmt@568db2f2))))))
+SymTable:
+varf --> model.values.StringValue@378bf509
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(model.statements.OpenRFileStmt@58372a00 ; (int varc ; (model.statements.ReadFileStmt@4dd8dc3 ; (Print(varc) ; (model.statements.ReadFileStmt@6d03e736 ; (Print(varc) ; model.statements.CloseRFileStmt@568db2f2))))))
+SymTable:
+varf --> model.values.StringValue@7699a589
+Out:
+FileTable:
+------------------------------
+ExeStack:
+model.statements.OpenRFileStmt@58372a00
+(int varc ; (model.statements.ReadFileStmt@4dd8dc3 ; (Print(varc) ; (model.statements.ReadFileStmt@6d03e736 ; (Print(varc) ; model.statements.CloseRFileStmt@568db2f2)))))
+SymTable:
+varf --> model.values.StringValue@7699a589
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(int varc ; (model.statements.ReadFileStmt@4dd8dc3 ; (Print(varc) ; (model.statements.ReadFileStmt@6d03e736 ; (Print(varc) ; model.statements.CloseRFileStmt@568db2f2)))))
+SymTable:
+varf --> model.values.StringValue@7699a589
+Out:
+FileTable:
+------------------------------
+ExeStack:
+int varc
+(model.statements.ReadFileStmt@4dd8dc3 ; (Print(varc) ; (model.statements.ReadFileStmt@6d03e736 ; (Print(varc) ; model.statements.CloseRFileStmt@568db2f2))))
+SymTable:
+varf --> model.values.StringValue@7699a589
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(model.statements.ReadFileStmt@4dd8dc3 ; (Print(varc) ; (model.statements.ReadFileStmt@6d03e736 ; (Print(varc) ; model.statements.CloseRFileStmt@568db2f2))))
+SymTable:
+varf --> model.values.StringValue@7699a589
+varc --> 0
+Out:
+FileTable:
+------------------------------
+ExeStack:
+model.statements.ReadFileStmt@4dd8dc3
+(Print(varc) ; (model.statements.ReadFileStmt@6d03e736 ; (Print(varc) ; model.statements.CloseRFileStmt@568db2f2)))
+SymTable:
+varf --> model.values.StringValue@7699a589
+varc --> 0
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(Print(varc) ; (model.statements.ReadFileStmt@6d03e736 ; (Print(varc) ; model.statements.CloseRFileStmt@568db2f2)))
+SymTable:
+varf --> model.values.StringValue@7699a589
+varc --> 0
+Out:
+FileTable:
+------------------------------
+ExeStack:
+Print(varc)
+(model.statements.ReadFileStmt@6d03e736 ; (Print(varc) ; model.statements.CloseRFileStmt@568db2f2))
+SymTable:
+varf --> model.values.StringValue@7699a589
+varc --> 0
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(model.statements.ReadFileStmt@6d03e736 ; (Print(varc) ; model.statements.CloseRFileStmt@568db2f2))
+SymTable:
+varf --> model.values.StringValue@7699a589
+varc --> 0
+Out:
+0
+FileTable:
+------------------------------
+ExeStack:
+model.statements.ReadFileStmt@6d03e736
+(Print(varc) ; model.statements.CloseRFileStmt@568db2f2)
+SymTable:
+varf --> model.values.StringValue@7699a589
+varc --> 0
+Out:
+0
+FileTable:
+------------------------------
+ExeStack:
+(Print(varc) ; model.statements.CloseRFileStmt@568db2f2)
+SymTable:
+varf --> model.values.StringValue@7699a589
+varc --> 0
+Out:
+0
+FileTable:
+------------------------------
+ExeStack:
+Print(varc)
+model.statements.CloseRFileStmt@568db2f2
+SymTable:
+varf --> model.values.StringValue@7699a589
+varc --> 0
+Out:
+0
+FileTable:
+------------------------------
+ExeStack:
+model.statements.CloseRFileStmt@568db2f2
+SymTable:
+varf --> model.values.StringValue@7699a589
+varc --> 0
+Out:
+0
+0
+FileTable:
+------------------------------
+ExeStack:
+SymTable:
+varf --> model.values.StringValue@7699a589
+varc --> 0
+Out:
+0
+0
+FileTable:
+------------------------------
+ExeStack:
+(string varf ; (varf = model.values.StringValue@16b98e56 ; (model.statements.OpenRFileStmt@7ef20235 ; (int varc ; (model.statements.ReadFileStmt@27d6c5e0 ; (Print(varc) ; (model.statements.ReadFileStmt@4f3f5b24 ; (Print(varc) ; model.statements.CloseRFileStmt@15aeb7ab))))))))
+SymTable:
+Out:
+FileTable:
+------------------------------
+ExeStack:
+string varf
+(varf = model.values.StringValue@16b98e56 ; (model.statements.OpenRFileStmt@7ef20235 ; (int varc ; (model.statements.ReadFileStmt@27d6c5e0 ; (Print(varc) ; (model.statements.ReadFileStmt@4f3f5b24 ; (Print(varc) ; model.statements.CloseRFileStmt@15aeb7ab)))))))
+SymTable:
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(varf = model.values.StringValue@16b98e56 ; (model.statements.OpenRFileStmt@7ef20235 ; (int varc ; (model.statements.ReadFileStmt@27d6c5e0 ; (Print(varc) ; (model.statements.ReadFileStmt@4f3f5b24 ; (Print(varc) ; model.statements.CloseRFileStmt@15aeb7ab)))))))
+SymTable:
+varf --> model.values.StringValue@7b23ec81
+Out:
+FileTable:
+------------------------------
+ExeStack:
+varf = model.values.StringValue@16b98e56
+(model.statements.OpenRFileStmt@7ef20235 ; (int varc ; (model.statements.ReadFileStmt@27d6c5e0 ; (Print(varc) ; (model.statements.ReadFileStmt@4f3f5b24 ; (Print(varc) ; model.statements.CloseRFileStmt@15aeb7ab))))))
+SymTable:
+varf --> model.values.StringValue@7b23ec81
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(model.statements.OpenRFileStmt@7ef20235 ; (int varc ; (model.statements.ReadFileStmt@27d6c5e0 ; (Print(varc) ; (model.statements.ReadFileStmt@4f3f5b24 ; (Print(varc) ; model.statements.CloseRFileStmt@15aeb7ab))))))
+SymTable:
+varf --> model.values.StringValue@16b98e56
+Out:
+FileTable:
+------------------------------
+ExeStack:
+model.statements.OpenRFileStmt@7ef20235
+(int varc ; (model.statements.ReadFileStmt@27d6c5e0 ; (Print(varc) ; (model.statements.ReadFileStmt@4f3f5b24 ; (Print(varc) ; model.statements.CloseRFileStmt@15aeb7ab)))))
+SymTable:
+varf --> model.values.StringValue@16b98e56
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(int varc ; (model.statements.ReadFileStmt@27d6c5e0 ; (Print(varc) ; (model.statements.ReadFileStmt@4f3f5b24 ; (Print(varc) ; model.statements.CloseRFileStmt@15aeb7ab)))))
+SymTable:
+varf --> model.values.StringValue@16b98e56
+Out:
+FileTable:
+------------------------------
+ExeStack:
+int varc
+(model.statements.ReadFileStmt@27d6c5e0 ; (Print(varc) ; (model.statements.ReadFileStmt@4f3f5b24 ; (Print(varc) ; model.statements.CloseRFileStmt@15aeb7ab))))
+SymTable:
+varf --> model.values.StringValue@16b98e56
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(model.statements.ReadFileStmt@27d6c5e0 ; (Print(varc) ; (model.statements.ReadFileStmt@4f3f5b24 ; (Print(varc) ; model.statements.CloseRFileStmt@15aeb7ab))))
+SymTable:
+varf --> model.values.StringValue@16b98e56
+varc --> 0
+Out:
+FileTable:
+------------------------------
+ExeStack:
+model.statements.ReadFileStmt@27d6c5e0
+(Print(varc) ; (model.statements.ReadFileStmt@4f3f5b24 ; (Print(varc) ; model.statements.CloseRFileStmt@15aeb7ab)))
+SymTable:
+varf --> model.values.StringValue@16b98e56
+varc --> 0
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(Print(varc) ; (model.statements.ReadFileStmt@4f3f5b24 ; (Print(varc) ; model.statements.CloseRFileStmt@15aeb7ab)))
+SymTable:
+varf --> model.values.StringValue@16b98e56
+varc --> 12
+Out:
+FileTable:
+------------------------------
+ExeStack:
+Print(varc)
+(model.statements.ReadFileStmt@4f3f5b24 ; (Print(varc) ; model.statements.CloseRFileStmt@15aeb7ab))
+SymTable:
+varf --> model.values.StringValue@16b98e56
+varc --> 12
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(model.statements.ReadFileStmt@4f3f5b24 ; (Print(varc) ; model.statements.CloseRFileStmt@15aeb7ab))
+SymTable:
+varf --> model.values.StringValue@16b98e56
+varc --> 12
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+model.statements.ReadFileStmt@4f3f5b24
+(Print(varc) ; model.statements.CloseRFileStmt@15aeb7ab)
+SymTable:
+varf --> model.values.StringValue@16b98e56
+varc --> 12
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+(Print(varc) ; model.statements.CloseRFileStmt@15aeb7ab)
+SymTable:
+varf --> model.values.StringValue@16b98e56
+varc --> 34
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+Print(varc)
+model.statements.CloseRFileStmt@15aeb7ab
+SymTable:
+varf --> model.values.StringValue@16b98e56
+varc --> 34
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+model.statements.CloseRFileStmt@15aeb7ab
+SymTable:
+varf --> model.values.StringValue@16b98e56
+varc --> 34
+Out:
+12
+34
+FileTable:
+------------------------------
+ExeStack:
+SymTable:
+varf --> model.values.StringValue@16b98e56
+varc --> 34
+Out:
+12
+34
+FileTable:
+------------------------------
+ExeStack:
+(string varf ; (varf = test.in ; (model.statements.OpenRFileStmt@4eec7777 ; (int varc ; (model.statements.ReadFileStmt@3b07d329 ; (Print(varc) ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; model.statements.CloseRFileStmt@404b9385))))))))
+SymTable:
+Out:
+FileTable:
+------------------------------
+ExeStack:
+string varf
+(varf = test.in ; (model.statements.OpenRFileStmt@4eec7777 ; (int varc ; (model.statements.ReadFileStmt@3b07d329 ; (Print(varc) ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; model.statements.CloseRFileStmt@404b9385)))))))
+SymTable:
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(varf = test.in ; (model.statements.OpenRFileStmt@4eec7777 ; (int varc ; (model.statements.ReadFileStmt@3b07d329 ; (Print(varc) ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; model.statements.CloseRFileStmt@404b9385)))))))
+SymTable:
+varf --> 
+Out:
+FileTable:
+------------------------------
+ExeStack:
+varf = test.in
+(model.statements.OpenRFileStmt@4eec7777 ; (int varc ; (model.statements.ReadFileStmt@3b07d329 ; (Print(varc) ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; model.statements.CloseRFileStmt@404b9385))))))
+SymTable:
+varf --> 
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(model.statements.OpenRFileStmt@4eec7777 ; (int varc ; (model.statements.ReadFileStmt@3b07d329 ; (Print(varc) ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; model.statements.CloseRFileStmt@404b9385))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+------------------------------
+ExeStack:
+model.statements.OpenRFileStmt@4eec7777
+(int varc ; (model.statements.ReadFileStmt@3b07d329 ; (Print(varc) ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; model.statements.CloseRFileStmt@404b9385)))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(int varc ; (model.statements.ReadFileStmt@3b07d329 ; (Print(varc) ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; model.statements.CloseRFileStmt@404b9385)))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+------------------------------
+ExeStack:
+int varc
+(model.statements.ReadFileStmt@3b07d329 ; (Print(varc) ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; model.statements.CloseRFileStmt@404b9385))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(model.statements.ReadFileStmt@3b07d329 ; (Print(varc) ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; model.statements.CloseRFileStmt@404b9385))))
+SymTable:
+varf --> test.in
+varc --> 0
+Out:
+FileTable:
+------------------------------
+ExeStack:
+model.statements.ReadFileStmt@3b07d329
+(Print(varc) ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; model.statements.CloseRFileStmt@404b9385)))
+SymTable:
+varf --> test.in
+varc --> 0
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(Print(varc) ; (model.statements.ReadFileStmt@41629346 ; (Print(varc) ; model.statements.CloseRFileStmt@404b9385)))
+SymTable:
+varf --> test.in
+varc --> 12
+Out:
+FileTable:
+------------------------------
+ExeStack:
+Print(varc)
+(model.statements.ReadFileStmt@41629346 ; (Print(varc) ; model.statements.CloseRFileStmt@404b9385))
+SymTable:
+varf --> test.in
+varc --> 12
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(model.statements.ReadFileStmt@41629346 ; (Print(varc) ; model.statements.CloseRFileStmt@404b9385))
+SymTable:
+varf --> test.in
+varc --> 12
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+model.statements.ReadFileStmt@41629346
+(Print(varc) ; model.statements.CloseRFileStmt@404b9385)
+SymTable:
+varf --> test.in
+varc --> 12
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+(Print(varc) ; model.statements.CloseRFileStmt@404b9385)
+SymTable:
+varf --> test.in
+varc --> 34
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+Print(varc)
+model.statements.CloseRFileStmt@404b9385
+SymTable:
+varf --> test.in
+varc --> 34
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+model.statements.CloseRFileStmt@404b9385
+SymTable:
+varf --> test.in
+varc --> 34
+Out:
+12
+34
+FileTable:
+------------------------------
+ExeStack:
+SymTable:
+varf --> test.in
+varc --> 34
+Out:
+12
+34
+FileTable:
+------------------------------
+ExeStack:
+(string varf ; (varf = test.in ; (OpenRFile(varf) ; (int varc ; (ReadFile(varf,varc) ; (Print(varc) ; (ReadFile(varf,varc) ; (Print(varc) ; CloseRFile(varf)))))))))
+SymTable:
+Out:
+FileTable:
+------------------------------
+ExeStack:
+string varf
+(varf = test.in ; (OpenRFile(varf) ; (int varc ; (ReadFile(varf,varc) ; (Print(varc) ; (ReadFile(varf,varc) ; (Print(varc) ; CloseRFile(varf))))))))
+SymTable:
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(varf = test.in ; (OpenRFile(varf) ; (int varc ; (ReadFile(varf,varc) ; (Print(varc) ; (ReadFile(varf,varc) ; (Print(varc) ; CloseRFile(varf))))))))
+SymTable:
+varf --> 
+Out:
+FileTable:
+------------------------------
+ExeStack:
+varf = test.in
+(OpenRFile(varf) ; (int varc ; (ReadFile(varf,varc) ; (Print(varc) ; (ReadFile(varf,varc) ; (Print(varc) ; CloseRFile(varf)))))))
+SymTable:
+varf --> 
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(OpenRFile(varf) ; (int varc ; (ReadFile(varf,varc) ; (Print(varc) ; (ReadFile(varf,varc) ; (Print(varc) ; CloseRFile(varf)))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+------------------------------
+ExeStack:
+OpenRFile(varf)
+(int varc ; (ReadFile(varf,varc) ; (Print(varc) ; (ReadFile(varf,varc) ; (Print(varc) ; CloseRFile(varf))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(int varc ; (ReadFile(varf,varc) ; (Print(varc) ; (ReadFile(varf,varc) ; (Print(varc) ; CloseRFile(varf))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+------------------------------
+ExeStack:
+int varc
+(ReadFile(varf,varc) ; (Print(varc) ; (ReadFile(varf,varc) ; (Print(varc) ; CloseRFile(varf)))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(ReadFile(varf,varc) ; (Print(varc) ; (ReadFile(varf,varc) ; (Print(varc) ; CloseRFile(varf)))))
+SymTable:
+varf --> test.in
+varc --> 0
+Out:
+FileTable:
+------------------------------
+ExeStack:
+ReadFile(varf,varc)
+(Print(varc) ; (ReadFile(varf,varc) ; (Print(varc) ; CloseRFile(varf))))
+SymTable:
+varf --> test.in
+varc --> 0
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(Print(varc) ; (ReadFile(varf,varc) ; (Print(varc) ; CloseRFile(varf))))
+SymTable:
+varf --> test.in
+varc --> 12
+Out:
+FileTable:
+------------------------------
+ExeStack:
+Print(varc)
+(ReadFile(varf,varc) ; (Print(varc) ; CloseRFile(varf)))
+SymTable:
+varf --> test.in
+varc --> 12
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(ReadFile(varf,varc) ; (Print(varc) ; CloseRFile(varf)))
+SymTable:
+varf --> test.in
+varc --> 12
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+ReadFile(varf,varc)
+(Print(varc) ; CloseRFile(varf))
+SymTable:
+varf --> test.in
+varc --> 12
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+(Print(varc) ; CloseRFile(varf))
+SymTable:
+varf --> test.in
+varc --> 34
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+Print(varc)
+CloseRFile(varf)
+SymTable:
+varf --> test.in
+varc --> 34
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+CloseRFile(varf)
+SymTable:
+varf --> test.in
+varc --> 34
+Out:
+12
+34
+FileTable:
+------------------------------
+ExeStack:
+SymTable:
+varf --> test.in
+varc --> 34
+Out:
+12
+34
+FileTable:
+------------------------------
+ExeStack:
+(string varf ; (varf = test.in ; (openRFile(varf) ; (int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf)))))))))
+SymTable:
+Out:
+FileTable:
+------------------------------
+ExeStack:
+string varf
+(varf = test.in ; (openRFile(varf) ; (int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf))))))))
+SymTable:
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(varf = test.in ; (openRFile(varf) ; (int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf))))))))
+SymTable:
+varf --> 
+Out:
+FileTable:
+------------------------------
+ExeStack:
+varf = test.in
+(openRFile(varf) ; (int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf)))))))
+SymTable:
+varf --> 
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(openRFile(varf) ; (int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf)))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+------------------------------
+ExeStack:
+openRFile(varf)
+(int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+------------------------------
+ExeStack:
+int varc
+(readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf)))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf)))))
+SymTable:
+varf --> test.in
+varc --> 0
+Out:
+FileTable:
+------------------------------
+ExeStack:
+readFile(varf,varc)
+(print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf))))
+SymTable:
+varf --> test.in
+varc --> 0
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf))))
+SymTable:
+varf --> test.in
+varc --> 12
+Out:
+FileTable:
+------------------------------
+ExeStack:
+print(varc)
+(readFile(varf,varc) ; (print(varc) ; closeRFile(varf)))
+SymTable:
+varf --> test.in
+varc --> 12
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(readFile(varf,varc) ; (print(varc) ; closeRFile(varf)))
+SymTable:
+varf --> test.in
+varc --> 12
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+readFile(varf,varc)
+(print(varc) ; closeRFile(varf))
+SymTable:
+varf --> test.in
+varc --> 12
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+(print(varc) ; closeRFile(varf))
+SymTable:
+varf --> test.in
+varc --> 34
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+print(varc)
+closeRFile(varf)
+SymTable:
+varf --> test.in
+varc --> 34
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+closeRFile(varf)
+SymTable:
+varf --> test.in
+varc --> 34
+Out:
+12
+34
+FileTable:
+------------------------------
+ExeStack:
+SymTable:
+varf --> test.in
+varc --> 34
+Out:
+12
+34
+FileTable:
+------------------------------
+ExeStack:
+(string varf ; (varf = test.in ; (openRFile(varf) ; (int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf)))))))))
+SymTable:
+Out:
+FileTable:
+------------------------------
+ExeStack:
+string varf
+(varf = test.in ; (openRFile(varf) ; (int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf))))))))
+SymTable:
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(varf = test.in ; (openRFile(varf) ; (int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf))))))))
+SymTable:
+varf --> 
+Out:
+FileTable:
+------------------------------
+ExeStack:
+varf = test.in
+(openRFile(varf) ; (int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf)))))))
+SymTable:
+varf --> 
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(openRFile(varf) ; (int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf)))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+------------------------------
+ExeStack:
+openRFile(varf)
+(int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(int varc ; (readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf))))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+------------------------------
+ExeStack:
+int varc
+(readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf)))))
+SymTable:
+varf --> test.in
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(readFile(varf,varc) ; (print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf)))))
+SymTable:
+varf --> test.in
+varc --> 0
+Out:
+FileTable:
+------------------------------
+ExeStack:
+readFile(varf,varc)
+(print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf))))
+SymTable:
+varf --> test.in
+varc --> 0
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(print(varc) ; (readFile(varf,varc) ; (print(varc) ; closeRFile(varf))))
+SymTable:
+varf --> test.in
+varc --> 12
+Out:
+FileTable:
+------------------------------
+ExeStack:
+print(varc)
+(readFile(varf,varc) ; (print(varc) ; closeRFile(varf)))
+SymTable:
+varf --> test.in
+varc --> 12
+Out:
+FileTable:
+------------------------------
+ExeStack:
+(readFile(varf,varc) ; (print(varc) ; closeRFile(varf)))
+SymTable:
+varf --> test.in
+varc --> 12
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+readFile(varf,varc)
+(print(varc) ; closeRFile(varf))
+SymTable:
+varf --> test.in
+varc --> 12
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+(print(varc) ; closeRFile(varf))
+SymTable:
+varf --> test.in
+varc --> 34
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+print(varc)
+closeRFile(varf)
+SymTable:
+varf --> test.in
+varc --> 34
+Out:
+12
+FileTable:
+------------------------------
+ExeStack:
+closeRFile(varf)
+SymTable:
+varf --> test.in
+varc --> 34
+Out:
+12
+34
+FileTable:
+------------------------------
+ExeStack:
+SymTable:
+varf --> test.in
+varc --> 34
+Out:
+12
+34
+FileTable:
+------------------------------

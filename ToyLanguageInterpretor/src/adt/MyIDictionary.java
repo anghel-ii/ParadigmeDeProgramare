@@ -7,4 +7,5 @@ public interface MyIDictionary<K,V> {
     void update(K key, V value);
     V lookup(K key);
     Set<K> keys();
+    V remove(K key);
 }

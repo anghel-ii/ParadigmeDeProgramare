@@ -32,6 +32,11 @@ public class MyDictionary<K,V> implements MyIDictionary<K,V> {
     }
 
     @Override
+    public V remove(K key) {
+        return map.remove(key);
+    }
+
+    @Override
     public String toString() {
         return map.toString();
     }
