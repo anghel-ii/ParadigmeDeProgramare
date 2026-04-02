@@ -1,12 +1,14 @@
 package model.expressions;
 
 import adt.MyIDictionary;
+import adt.MyIHeap;
 import exceptions.MyException;
 import model.types.IntType;
+import model.types.Type;
 import model.values.IntValue;
 import model.values.Value;
 
-public final class ArithExp implements Exp {
+public class ArithExp implements Exp {
     private final Exp e1, e2;
     private final char op; // + - * /
 
@@ -17,11 +19,11 @@ public final class ArithExp implements Exp {
     }
 
     @Override
-    public Value eval(MyIDictionary<String, Value> tbl) throws MyException {
-        Value v1 = e1.eval(tbl);
+    public Value eval(MyIDictionary<String, Value> tbl, MyIHeap<Integer,Value> hp) throws MyException {
+        Value v1 = e1.eval(tbl,hp);
         if(!v1.getType().equals(new IntType()))
             throw new MyException("ArithExp ERROR: First operand type mismatch");
-        Value v2 = e2.eval(tbl);
+        Value v2 = e2.eval(tbl,hp);
         if(!v2.getType().equals(new IntType()))
             throw new MyException("ArithExp ERROR: Second operand type mismatch");
 
@@ -40,8 +42,18 @@ public final class ArithExp implements Exp {
     }
 
     @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typ1 = e1.typecheck(typeEnv);
+        Type typ2 = e2.typecheck(typeEnv);
+        if (!typ1.equals(new IntType()))
+            throw new MyException("ArithExp ERROR: First operand is not an integer");
+        if (!typ2.equals(new IntType()))
+            throw new MyException("ArithExp ERROR: Second operand is not an integer");
+        return new IntType();
+    }
+
+    @Override
     public String toString(){
-        return "(" + e1 + " " + op + " " + e2 + ")";
+        return e1 + " " + op + " " + e2;
     }
 }
-

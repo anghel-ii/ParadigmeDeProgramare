@@ -5,7 +5,7 @@ import model.values.Value;
 
 import java.util.Objects;
 
-public final class IntType implements Type {
+public class IntType implements Type {
 
     @Override
     public boolean equals(Object another) {

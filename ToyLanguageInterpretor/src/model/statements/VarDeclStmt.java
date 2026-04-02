@@ -6,7 +6,7 @@ import model.types.Type;
 import model.values.Value;
 import state.PrgState;
 
-public final class VarDeclStmt implements IStmt{
+public class VarDeclStmt implements IStmt{
     private final String name;
     private final Type type;
 
@@ -21,7 +21,13 @@ public final class VarDeclStmt implements IStmt{
         if(symTbl.isDefined(name))
             throw new MyException("Variable already declared: " + name);
         symTbl.update(name, type.defaultValue());
-        return state;
+        return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        typeEnv.update(name, type);
+        return typeEnv;
     }
 
     @Override

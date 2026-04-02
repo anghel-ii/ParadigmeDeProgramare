@@ -14,41 +14,40 @@ import state.PrgState;
 
 import java.util.Map;
 
-public class IfStmt implements IStmt {
-    private final Exp condition;
-    private final IStmt thenStmt;
-    private final IStmt elseStmt;
+public class WhileStmt implements IStmt{
+    private final Exp exp;
+    private final IStmt stmt;
 
-    public IfStmt(Exp condition, IStmt thenStmt, IStmt elseStmt) {
-        this.condition = condition;
-        this.thenStmt = thenStmt;
-        this.elseStmt = elseStmt;
+    public WhileStmt(Exp exp, IStmt stmt) {
+        this.exp = exp;
+        this.stmt = stmt;
     }
 
     @Override
-    public PrgState execute(PrgState state) {
+    public PrgState execute(PrgState state) throws MyException {
+        MyIStack<IStmt> stk = state.getExeStack();
         MyIDictionary<String, Value> symTbl = state.getSymTable();
         MyIHeap<Integer,Value> heap = state.getHeap();
+        Value val = exp.eval(symTbl,heap);
 
-        Value v = condition.eval(symTbl,heap);
-        if(!v.getType().equals(new BoolType()))
-            throw new MyException("IfStmt ERRROR: invalid condition expression");
-        boolean c = ((BoolValue)v).getVal();
-        MyIStack<IStmt> stk = state.getExeStack();
-        if(c)
-            stk.push(thenStmt);
-        else
-            stk.push(elseStmt);
+        if(!val.getType().equals(new BoolType()))
+            throw new MyException("While ERROR: Condition is not a boolean value");
+
+        if(((BoolValue) val).getVal()) {
+            System.out.println("inside true");
+            stk.push(this);
+            stk.push(stmt);
+        }
+
         return null;
     }
 
     @Override
     public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
-        Type typeExp = condition.typecheck(typeEnv);
+        Type typeExp = exp.typecheck(typeEnv);
         if (!typeExp.equals(new BoolType()))
-            throw new MyException("IfStmt ERROR: condition is not boolean");
-        thenStmt.typecheck(copyTypeEnv(typeEnv));
-        elseStmt.typecheck(copyTypeEnv(typeEnv));
+            throw new MyException("WhileStmt ERROR: condition is not boolean");
+        stmt.typecheck(copyTypeEnv(typeEnv));
         return typeEnv;
     }
 
@@ -62,6 +61,6 @@ public class IfStmt implements IStmt {
 
     @Override
     public String toString() {
-        return "IF(" + condition + ") THEN(" + thenStmt + ") ELSE(" + elseStmt + ")";
+        return "while("+exp+") " + stmt;
     }
 }

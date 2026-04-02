@@ -1,18 +1,18 @@
 package model.statements;
 
 import adt.MyIDictionary;
+import adt.MyIHeap;
 import exceptions.MyException;
 import model.expressions.Exp;
 import model.types.StringType;
+import model.types.Type;
 import model.values.StringValue;
 import model.values.Value;
 import state.PrgState;
-
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 
-public final class OpenRFileStmt implements IStmt {
+public class OpenRFileStmt implements IStmt {
     private final Exp exp;
 
     public OpenRFileStmt(Exp exp) {
@@ -23,8 +23,8 @@ public final class OpenRFileStmt implements IStmt {
     public PrgState execute(PrgState state) throws MyException {
         MyIDictionary<String, Value> symTbl = state.getSymTable();
         MyIDictionary<StringValue, BufferedReader> fileTbl = state.getFileTable();
-
-        Value val = exp.eval(symTbl);
+        MyIHeap<Integer,Value> heap = state.getHeap();
+        Value val = exp.eval(symTbl,heap);
 
         if(!val.getType().equals(new StringType()))
             throw new MyException("OpenRFile ERROR: invalid argument type");
@@ -42,7 +42,15 @@ public final class OpenRFileStmt implements IStmt {
             throw new MyException("OpenRFile ERROR: " + e.getMessage());
         }
 
-        return state;
+        return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typeExp = exp.typecheck(typeEnv);
+        if (typeExp.equals(new StringType()))
+            return typeEnv;
+        throw new MyException("OpenRFile ERROR: argument is not a string");
     }
 
     @Override

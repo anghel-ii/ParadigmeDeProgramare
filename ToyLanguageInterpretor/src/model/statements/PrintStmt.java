@@ -1,12 +1,15 @@
 package model.statements;
 
 import adt.MyIDictionary;
+import adt.MyIHeap;
 import adt.MyIList;
+import exceptions.MyException;
 import model.expressions.Exp;
+import model.types.Type;
 import model.values.Value;
 import state.PrgState;
 
-public final class PrintStmt implements IStmt {
+public class PrintStmt implements IStmt {
     private final Exp exp;
 
     public PrintStmt(Exp exp) {
@@ -17,9 +20,16 @@ public final class PrintStmt implements IStmt {
     public PrgState execute(PrgState state) {
         MyIDictionary<String, Value> tbl = state.getSymTable();
         MyIList<Value> out = state.getOut();
-        Value v = exp.eval(tbl);
+        MyIHeap<Integer,Value> heap = state.getHeap();
+        Value v = exp.eval(tbl,heap);
         out.add(v);
-        return state;
+        return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        exp.typecheck(typeEnv);
+        return typeEnv;
     }
 
     @Override

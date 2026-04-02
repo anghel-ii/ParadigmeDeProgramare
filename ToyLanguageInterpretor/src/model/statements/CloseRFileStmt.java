@@ -1,9 +1,11 @@
 package model.statements;
 
 import adt.MyIDictionary;
+import adt.MyIHeap;
 import exceptions.MyException;
 import model.expressions.Exp;
 import model.types.StringType;
+import model.types.Type;
 import model.values.StringValue;
 import model.values.Value;
 import state.PrgState;
@@ -21,8 +23,9 @@ public class CloseRFileStmt implements IStmt{
     public PrgState execute(PrgState state) throws MyException {
         MyIDictionary<String, Value> symTbl = state.getSymTable();
         MyIDictionary<StringValue, BufferedReader> fileTbl = state.getFileTable();
+        MyIHeap<Integer,Value> heap = state.getHeap();
 
-        Value val = exp.eval(symTbl);
+        Value val = exp.eval(symTbl,heap);
         if(!val.getType().equals(new StringType()))
             throw new MyException("CloseFile ERROR: invalid argument type");
 
@@ -38,7 +41,15 @@ public class CloseRFileStmt implements IStmt{
         catch (Exception e){
             throw new MyException("CloseFile ERROR: " + e.getMessage());
         }
-        return state;
+        return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typeExp = exp.typecheck(typeEnv);
+        if (typeExp.equals(new StringType()))
+            return typeEnv;
+        throw new MyException("CloseFile ERROR: argument is not a string");
     }
 
     @Override

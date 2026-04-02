@@ -3,7 +3,7 @@ package model.values;
 import model.types.IntType;
 import model.types.Type;
 
-public final class IntValue implements Value{
+public class IntValue implements Value{
 
     private final int val;
 

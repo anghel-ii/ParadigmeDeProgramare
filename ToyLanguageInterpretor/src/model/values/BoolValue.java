@@ -3,7 +3,7 @@ package model.values;
 import model.types.BoolType;
 import model.types.Type;
 
-public final class BoolValue implements Value {
+public class BoolValue implements Value {
 
     private final boolean val;
 

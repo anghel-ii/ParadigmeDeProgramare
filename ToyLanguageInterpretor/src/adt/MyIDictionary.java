@@ -1,5 +1,6 @@
 package adt;
 
+import java.util.Map;
 import java.util.Set;
 
 public interface MyIDictionary<K,V> {
@@ -8,4 +9,5 @@ public interface MyIDictionary<K,V> {
     V lookup(K key);
     Set<K> keys();
     V remove(K key);
+    Map<K, V> getContent();
 }

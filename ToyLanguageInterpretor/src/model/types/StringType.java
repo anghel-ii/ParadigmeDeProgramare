@@ -5,7 +5,7 @@ import model.values.Value;
 
 import java.util.Objects;
 
-public final class StringType implements Type {
+public class StringType implements Type {
 
     @Override
     public boolean equals(Object another){return another instanceof StringType;}

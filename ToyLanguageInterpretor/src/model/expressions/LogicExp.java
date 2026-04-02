@@ -1,12 +1,14 @@
 package model.expressions;
 
 import adt.MyIDictionary;
+import adt.MyIHeap;
 import exceptions.MyException;
 import model.types.BoolType;
+import model.types.Type;
 import model.values.BoolValue;
 import model.values.Value;
 
-public final class LogicExp implements Exp {
+public class LogicExp implements Exp {
     private final Exp e1, e2;
     private final String op; // and or
 
@@ -17,11 +19,11 @@ public final class LogicExp implements Exp {
     }
 
     @Override
-    public Value eval(MyIDictionary<String, Value> tbl) throws MyException {
-        Value v1 = e1.eval(tbl);
+    public Value eval(MyIDictionary<String, Value> tbl, MyIHeap<Integer,Value> hp) throws MyException {
+        Value v1 = e1.eval(tbl,hp);
         if (!v1.getType().equals(new BoolType()))
             throw new MyException("LogicExp ERROR: First operand type mismatch");
-        Value v2 = e2.eval(tbl);
+        Value v2 = e2.eval(tbl,hp);
         if (!v2.getType().equals(new BoolType()))
             throw new MyException("LogicExp ERROR: Second operand type mismatch");
 
@@ -32,6 +34,17 @@ public final class LogicExp implements Exp {
             case "or" -> new BoolValue(b1 || b2);
             default -> throw new MyException("LogicExp ERROR: Unknown operation");
         };
+    }
+
+    @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typ1 = e1.typecheck(typeEnv);
+        Type typ2 = e2.typecheck(typeEnv);
+        if (!typ1.equals(new BoolType()))
+            throw new MyException("LogicExp ERROR: First operand is not boolean");
+        if (!typ2.equals(new BoolType()))
+            throw new MyException("LogicExp ERROR: Second operand is not boolean");
+        return new BoolType();
     }
 
     @Override
